@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/javaclient/jdbcdrivers/11g/ojdbc6_11.2.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dixita/workspace/jc_11106/src/simplefan.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dixita/workspace/jc_11106/src/ucp.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
