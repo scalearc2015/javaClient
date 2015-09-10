@@ -6,43 +6,43 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
+//import java.io.InputStreamReader;
+//import java.sql.Connection;
+//import java.sql.Driver;
+//import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Enumeration;
+//import java.util.Enumeration;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.FileHandler;  
-import java.util.logging.Level;  
+//import java.util.logging.Level;  
 import java.util.logging.Logger;  
 import java.util.logging.SimpleFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import oracle.jdbc.pool.OracleDataSource;
-import oracle.jdbc.pool.OracleConnectionPoolDataSource;
-import oracle.simplefan.FanEventListener;
-import oracle.simplefan.FanManager;
-import oracle.simplefan.FanSubscription;
-import oracle.simplefan.LoadAdvisoryEvent;
-import oracle.simplefan.NodeDownEvent;
-import oracle.simplefan.ServiceDownEvent;
-import oracle.ucp.UniversalConnectionPoolException;
+//import oracle.jdbc.pool.OracleConnectionPoolDataSource;
+//import oracle.simplefan.FanEventListener;
+//import oracle.simplefan.FanManager;
+//import oracle.simplefan.FanSubscription;
+//import oracle.simplefan.LoadAdvisoryEvent;
+//import oracle.simplefan.NodeDownEvent;
+//import oracle.simplefan.ServiceDownEvent;
+//import oracle.ucp.UniversalConnectionPoolException;
 import oracle.ucp.admin.UniversalConnectionPoolManager;
 import oracle.ucp.admin.UniversalConnectionPoolManagerImpl;
 import oracle.ucp.jdbc.PoolDataSource;
 import oracle.ucp.jdbc.PoolDataSourceFactory;
-import oracle.ucp.jdbc.PoolDataSourceImpl;
+//import oracle.ucp.jdbc.PoolDataSourceImpl;
 
 
-import java.net.URL;
-import java.net.URLClassLoader;
+//import java.net.URL;
+//import java.net.URLClassLoader;
 
 
 public class connectDS
@@ -159,8 +159,8 @@ public class connectDS
 	public static void main(String[] args) throws IOException, InterruptedException, PropertyVetoException, SQLException 
 	{
 		ExecutorService executor = Executors.newFixedThreadPool(10000);
-		String query_val = null;
-		String flag = null;
+	//	String query_val = null;
+		//String flag = null;
 		int i = 0;
 		final SynchronizedCounter total_c = 	new SynchronizedCounter();
 		final SynchronizedCounter pool_s = 		new SynchronizedCounter();
@@ -456,8 +456,8 @@ public class connectDS
 				long ed_time1 = System.nanoTime();
 				long str_time1 =  start_time.long_value();
 				int avg_query_prop_sec = 0;
-				long total_con_time = my.total_con_opening_time.long_value();
-				int avg_con_time = (int)(total_con_time/total_c.value());
+				//long total_con_time = my.total_con_opening_time.long_value();
+				//int avg_con_time = (int)(total_con_time/total_c.value());
 				tot_tim_con =  (ed_time1 - str_time1);
 			//	System.out.println("Time Taken (in millisecond):  " + TimeUnit.MILLISECONDS.convert(tot_tim_con + tot_tim_con_op, TimeUnit.NANOSECONDS));
 			//	System.out.println("Total time taken to open connection(in milisecond):" + total_con_time + ". Average time :" + avg_con_time);
